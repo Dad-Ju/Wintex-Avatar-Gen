@@ -1,0 +1,19 @@
+{
+  "name": "AvatarGen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "openshift": "nodeshift --expose --dockerImage=registry.access.redhat.com/rhoar-nodejs/nodejs-8",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.8.5"
+  },
+  "devDependencies": {
+    "nodeshift": "^4.0.0"
+  }
+}

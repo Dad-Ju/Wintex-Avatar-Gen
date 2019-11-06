@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Wintex Avatar Generator</title>
+    <meta name="description" content="Custom Wintex Avatargenerator für Member des Wintex Sports Clans">
+    <meta property="og:image" content="assets/img/wintex_logo.svg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" sizes="400x301" href="assets/img/wintex_logo.svg">
+    <link rel="icon" type="image/svg+xml" sizes="400x301" href="assets/img/wintex_logo.svg">
+    <link rel="icon" type="image/svg+xml" sizes="400x301" href="assets/img/wintex_logo.svg">
+    <link rel="icon" type="image/svg+xml" sizes="400x301" href="assets/img/wintex_logo.svg">
+    <link rel="icon" type="image/svg+xml" sizes="400x301" href="assets/img/wintex_logo.svg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/colorpicker.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+<title>WINTEX - AVATARGENERATOR</title>
+</head>
+
+<body id="page-top" style="background-color: rgb(24,188,156);">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img data-aos="slide-up" data-aos-offset="20" data-aos-once="true" src="assets/img/wintex_logo.svg" style="width: 119px;margin: -17px;padding: 0px;"><code data-aos="slide-up" data-aos-once="true" style="margin: 10px;">Wintex SPORTS</code></a>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto"></ul>
+        </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center" style="height: 0px;">
+        <h1>AVATAR-GENERATOR</h1>
+    </header>
+    <section class="text-center bg-primary text-white mb-0">
+        <div class="container" style="height: auto;">
+            <div class="row">
+                <div class="col" data-aos="slide-up" data-aos-once="true">
+                    <form>
+                        <div class="form-group">
+                            <h1>ALLGEMEIN:</h1>
+                            <div class="form-row" style="margin: 20px;">
+                                <div class="col"><label><strong>Name:</strong></label><input class="form-control" type="text" id="name" value="Member" autocomplete="off" maxlength="10" minlength="3" required=""></div>
+                                <div class="col"><label><strong>Squad:</strong></label><input class="form-control" type="text" id="squad" value="" maxlength="22" minlength="1" required=""></div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <h1>ZUSATZ:</h1>
+                            <div class="form-row" style="margin: 20px;">
+                                <div class="col"><label><strong>Schriftart Name:</strong></label><input class="form-control" type="text" id="namefont" value="" disabled=""></div>
+                                <div class="col"><label><strong>Schriftart Squad:</strong></label><input class="form-control" type="text" id="squadfont" value="" disabled=""></div>
+                            </div>
+                            <div class="form-row" style="margin: 20px;">
+                                <div class="col-xl-6"><label style="margin-top: 32px;"><strong>Schriftfarbe Name:</strong></label>
+                                    <div id="colorSelector" class="btn btn-primary">
+                                        <div data-bs-hover-animate="pulse" style="width: 30ps;background-color: #ffffff;"></div>
+                                    </div><input class="form-control" type="hidden" name="textcolor" value="255,255,255"></div>
+                                <div class="col-xl-6"><label style="margin-top: 32px;"><strong>Schriftfarbe Squad:</strong></label>
+                                    <div id="colorSelector2" class="btn btn-primary">
+                                        <div data-bs-hover-animate="pulse" style="width: 30ps;background-color: #ffffff;"></div>
+                                    </div><input class="form-control" type="hidden" name="squadcolor" value="255,255,255"></div>
+                                <div class="col offset-xl-0"><label><strong>Hintergrund:</strong></label>
+                                    <div class="dropup"><button class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-bs-hover-animate="swing" type="button"><i class="fa fa-th-large" style="font-size: 36px;"></i></button>
+                                        <div class="dropdown-menu text-break text-uppercase text-right border-dark shadow"
+                                            role="menu" id="bg-menu" style="height: auto;max-height: 400px;overflow-x: scroll;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col" data-aos="fade-up" data-aos-once="true">
+                                    <div class="card bg-dark text-break text-uppercase shadow-lg d-inline-flex" data-bs-hover-animate="pulse" style="max-width: 500px;">
+                                        <div class="card-header shadow-none">
+                                            <h1>VORSCHAU</h1>
+                                        </div>
+                                        <div class="card-body shadow-lg"><img data-bs-hover-animate="tada" id="preview" src="assets/img/wintex_logo.svg" style="max-width: 400px;"></div>
+                                        <div class="card-footer"><button class="btn btn-primary text-center shadow-lg" data-bs-hover-animate="rubberBand" id="download" type="button" style="color: #ffffff;">&nbsp;DOWNLOAD</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div data-aos="zoom-in-up" data-aos-once="true" class="footer-dark" style="background-color: rgb(44,62,80);">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col item social"><a class="pulse animated infinite" href="#"><i class="icon ion-social-facebook"></i></a><a class="pulse animated infinite" href="#"><i class="icon ion-social-twitter"></i></a><a class="pulse animated infinite" href="#"><i class="icon ion-social-snapchat"></i></a>
+                        <a
+                            class="pulse animated infinite" href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright" style="font-size: 31px;padding-top: 0px;"><a href="#"><b class="text-center"></b></a><b class="text-center"><a href="http://www.wintex-sports.com/impressum/">© by Ju for Wintex Sports (Impressum)</a><br></b></p>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
+    <script src="assets/js/colorpicker.js"></script>
+    <script src="assets/js/eye.js"></script>
+    <script src="assets/js/gen.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/xinit.js"></script>
+</body>
+
+</html>
