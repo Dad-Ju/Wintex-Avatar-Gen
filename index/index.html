@@ -26,25 +26,18 @@
 <title>WINTEX - AVATARGENERATOR</title>
 </head>
 
-<body id="page-top" style="background-color: rgb(24,188,156);">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img data-aos="slide-up" data-aos-offset="20" data-aos-once="true" src="assets/img/wintex_logo.svg" style="width: 119px;margin: -17px;padding: 0px;"><code data-aos="slide-up" data-aos-once="true" style="margin: 10px;">Wintex SPORTS</code></a>
-            <div
-                class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto"></ul>
-        </div>
-        </div>
-    </nav>
-    <header class="masthead bg-primary text-white text-center" style="height: 0px;">
-        <h1>AVATAR-GENERATOR</h1>
+<body id="page-top" style="background-color: #343a40;">
+    <header class="masthead bg-primary text-white text-center" style="height: 0px;max-height: 0px;padding-top: 40px;padding-bottom: 139px;">
+        <h1 style="padding-bottom: 3px;"><img src="assets/img/wintex_logo.svg" style="width: 150px;"><span>AVATAR GENERATOR</span></h1>
+        <hr class="d-xl-flex">
     </header>
-    <section class="text-center bg-primary text-white mb-0">
+    <section class="text-center bg-primary text-white mb-0" style="padding-top: 10px;padding-bottom: 70px;">
         <div class="container" style="height: auto;">
             <div class="row">
                 <div class="col" data-aos="slide-up" data-aos-once="true">
                     <form>
                         <div class="form-group">
-                            <h1>ALLGEMEIN:</h1>
+                            <h3>ALLGEMEIN:</h3>
                             <div class="form-row" style="margin: 20px;">
                                 <div class="col"><label><strong>Name:</strong></label><input class="form-control" type="text" id="name" value="Member" autocomplete="off" maxlength="10" minlength="3" required=""></div>
                                 <div class="col"><label><strong>Squad:</strong></label><input class="form-control" type="text" id="squad" value="" maxlength="22" minlength="1" required=""></div>
@@ -52,7 +45,7 @@
                         </div>
                         <hr>
                         <div class="form-group">
-                            <h1>ZUSATZ:</h1>
+                            <h3>ZUSATZ:</h3>
                             <div class="form-row" style="margin: 20px;">
                                 <div class="col"><label><strong>Schriftart Name:</strong></label><input class="form-control" type="text" id="namefont" value="" disabled=""></div>
                                 <div class="col"><label><strong>Schriftart Squad:</strong></label><input class="form-control" type="text" id="squadfont" value="" disabled=""></div>
@@ -73,19 +66,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col" data-aos="fade-up" data-aos-once="true">
-                                    <div class="card bg-dark text-break text-uppercase shadow-lg d-inline-flex" data-bs-hover-animate="pulse" style="max-width: 500px;">
-                                        <div class="card-header shadow-none">
-                                            <h1>VORSCHAU</h1>
-                                        </div>
-                                        <div class="card-body shadow-lg"><img data-bs-hover-animate="tada" id="preview" src="assets/img/wintex_logo.svg" style="max-width: 400px;"></div>
-                                        <div class="card-footer"><button class="btn btn-primary text-center shadow-lg" data-bs-hover-animate="rubberBand" id="download" type="button" style="color: #ffffff;">&nbsp;DOWNLOAD</button></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </form>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-once="true">
+                            <div class="card text-break text-uppercase shadow-lg d-inline-flex" data-bs-hover-animate="pulse" style="max-width: 500px;background-color: #1a3b5c;">
+                                <div class="card-header shadow-none">
+                                    <h1>VORSCHAU</h1>
+                                </div>
+                                <div class="card-body shadow-lg"><img data-bs-hover-animate="tada" id="preview" src="assets/img/wintex_logo.svg" style="max-width: 400px;"></div>
+                                <div class="card-footer"><button class="btn btn-primary text-center shadow-lg" data-bs-hover-animate="rubberBand" id="download" type="button" style="color: #ffffff;">&nbsp;DOWNLOAD</button></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,7 +103,6 @@
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/freelancer.js"></script>
     <script src="assets/js/colorpicker.js"></script>
     <script src="assets/js/eye.js"></script>
     <script src="assets/js/gen.js"></script>

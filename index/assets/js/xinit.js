@@ -14,6 +14,8 @@ $(document).ready((function($){
 				onChange: function (hsb, hex, rgb) {
 					$('#colorSelector div').css('backgroundColor', '#' + hex);
 					//TextColor(rgb);
+                    changelogo("namecol", "#" + hex);
+
 				},
                 onSubmit: function(hsb, hex, rgb){
                     changelogo("namecol", "#" + hex);
@@ -33,6 +35,7 @@ $(document).ready((function($){
 				onChange: function (hsb, hex, rgb) {
 					$('#colorSelector2 div').css('backgroundColor', '#' + hex);
 					//TextColor(rgb);
+                    changelogo("squadcol", "#" + hex);
 				},
                 onSubmit: function(hsb, hex, rgb){
                     changelogo("squadcol", "#" + hex);

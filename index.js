@@ -49,7 +49,7 @@ var server = http.createServer(function (req, res) {
                     background.blit(squad,0 , 0);
                 }
                 if(preview){
-                    background.quality(60);
+                    background.quality(40);
                     background.resize(400, 400);
                 }else{
                     background.quality(100);
